@@ -844,23 +844,23 @@
         });
     </script>
     <script>
-        const menuIcon = document.getElementById("menuToggle");
-        const menuBtn = document.getElementById("menuBtn");
-        const menu = document.getElementById("lamborghiniMenu");
-        const closeMenu = document.getElementById("closeMenu");
+const menuIcon = document.getElementById("menuBtn");
+const menuToggle = document.getElementById("menuToggle");
+const menu = document.getElementById("lamborghiniMenu");
+const closeMenu = document.getElementById("closeMenu");
 
-        menuIcon.addEventListener("click", () => {
-            menu.classList.add("active");
-        });
+menuIcon.addEventListener("click", () => {
+    menu.classList.add("active");
+});
 
-        menuBtn.addEventListener("click", () => {
-            menu.classList.add("active");
-        });
+menuToggle.addEventListener("click", () => {
+    menu.classList.add("active");
+});
 
-        closeMenu.addEventListener("click", () => {
-            menu.classList.remove("active");
-        });
-    </script>
+closeMenu.addEventListener("click", () => {
+    menu.classList.remove("active");
+});
+</script>
 </body>
 
 </html>
