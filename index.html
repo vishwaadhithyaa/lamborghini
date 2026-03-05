@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automobili Lamborghini - Official Website</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/images/logo_header_01.svg" type="image/x-icon">
+    <!-- bootStarp -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Merienda:wght@300..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- style.css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header> <!--1.parentContainer -->
+        <nav class="navBar bg-black fixed-top"> <!-- 2.component -->
+            <div class="container  navBarContainer"> <!-- 3.componentContainer -->
+                <div class="row py-3 "> <!--4.row -->
+                    <div class="col-4 d-flex align-items-center"> <!--5.column -->
+                        <svg aria-hidden="true" class="icon " width="24" style="color: white; cursor: pointer;"
+                            height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            id="menuToggle">
+                            <path d="M22 6H2V5H22V6ZM22 18H2V19H22V18ZM22 11.5H2V12.5H22V11.5Z" fill="currentColor">
+                            </path>
+                        </svg>
+                        <button id="menuToggle">Menu</button>
+                    </div>
+                    <div class="col-4 text-center"> <!--5.column -->
+                        <img src="./assets/images/logo_header_01.svg" alt="logo" height="60px">
+                    </div>
+                    <div
+                        class="col-4 d-flex align-items-center justify-content-end">
+                        <!--5.column -->
+                        <svg aria-hidden="true" class="icon light m-3" width="24" style="color: white;" height="24"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13 7V3H2V13.707L4.707 11H7V18H18.293L22 21.707V7H13ZM4.293 10L3 11.293V4H12V7H7V10H4.293ZM21 19.293L18.707 17H8V8H21V19.293Z"
+                                fill="currentColor"></path>
+                        </svg>
+                        <svg aria-hidden="true" class="icon light m-3" width="24" style="color: white;" height="24"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14 2C9.58905 2 6.00005 5.589 6.00005 10C6.00005 12.043 6.77005 13.91 8.03605 15.325L2.14905 21.145L2.85205 21.855L8.74705 16.028C10.2009 17.3007 12.0678 18.0015 14 18C18.411 18 22 14.411 22 10C22 5.589 18.411 2 14 2ZM14 17C10.14 17 7.00005 13.86 7.00005 10C7.00005 6.14 10.14 3 14 3C17.86 3 21 6.14 21 10C21 13.86 17.86 17 14 17Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Fullscreen Menu Overlay -->
+        <div class=" lamborghini-menu" id="lamborghiniMenu">
+
+            <div class="container px-5 pt-5">
+
+                <div class="d-flex justify-content-between align-items-center mb-5">
+                    <h5 class="text-white">MENU</h5>
+                    <span class="close-menu" id="closeMenu">&times;</span>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-4">
+                        <ul class="menu-main">
+                            <li>MODELS</li>
+                            <li>BEYOND</li>
+                            <li>MUSEUM</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <ul class="menu-main">
+                            <li>OWNERSHIP</li>
+                            <li>COMPANY</li>
+                            <li>STORE</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <ul class="menu-main">
+                            <li>DEALERSHIPS</li>
+                            <li>MOTORSPORT</li>
+                            <li>NEWS</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <hr class="menu-divider">
+
+                <div class="row mt-5 small-links">
+
+                    <div class="col-lg-4">
+                        <p>Design</p>
+                        <p>Financial services</p>
+                        <p>Lounge</p>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <p>Sustainability</p>
+                        <p>Warranty extension</p>
+                        <p>Club</p>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <p>History</p>
+                        <p>Driving Programs</p>
+                        <p>Podcast</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="heroSection ">
+            <video autoplay muted loop playsinline class="bgVideo">
+                <source src="./assets/images/Driven by Dreams(1080P_HD) - Trim.mp4" type="video/mp4">
+            </video>
+
+            <div class="heroContent">
+                <h2 style="padding-bottom: 1rem ; font-size: 27px;"> INSPIRING FUTURE SINCE 1963</h2>
+                <h1 style="padding-bottom: 3rem; font-size: 70px; font-weight: bolder;">DRIVEN BY DREAMS</h1>
+                <a href="#"
+                    style="color: black; font-size: 15px; padding: 18px; background-color: #ffc000; border: none; font-weight: 500;">DISCOVER
+                    MORE <svg aria-hidden="true" class="icon light" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.4133 6L15.5553 6.92298L19.6739 11.3473H2V12.6527H19.6739L15.5541 17.077L16.4145 18L22 12L16.4145 6H16.4133Z"
+                            fill="currentColor"></path>
+                    </svg></a>
+            </div>
+        </div>
+    </header>
+    <main><!--1.parentContainer -->
+        <div class="models"><!-- 2.component-->
+            <div class="container"> <!-- 3.componentContainer -->
+                <div class="row" style="padding: 60px 0px;"> <!--4.row -->
+                    <div class="col-12 col-xl-6 col-sm-6"><!--5.column -->
+                        <h4 style="color:black;">MODELS </h4>
+                    </div>
+                    <div class="col-12 col-xl-6 col-sm-6 d-flex justify-content-end">
+                        <!--5.column -->
+                        <p style="color: black;" class="para">DISCOVER ALL MODELS <svg aria-hidden="true"
+                                class="icon light" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.4133 6L15.5553 6.92298L19.6739 11.3473H2V12.6527H19.6739L15.5541 17.077L16.4145 18L22 12L16.4145 6H16.4133Z"
+                                    fill="currentColor"></path>
+                            </svg></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div id="carCarousel" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-inner">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active modelsText">
+                        <div class="row justify-content-center">
+                            <div class="col-12 text-center">
+                                <img src="./assets/images/temerario_center_light.svg" alt="" id="imgHeading"
+                                    class="img-fluid">
+
+                                <h2 class="fs-1 ">
+                                    YOU CAN'T HIDE WHO YOU ARE
+                                </h2>
+
+                                <img src="./assets/images/familyChooser-Temerario_0.png" class="d-block img-fluid my-3">
+
+                                <div class="mt-4 py-5 px-md-4">
+                                    <a href="#" class="btn-custom m-2">EXPLORE THE MODEL <svg aria-hidden="true"
+                                            class="icon light" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16.4133 6L15.5553 6.92298L19.6739 11.3473H2V12.6527H19.6739L15.5541 17.077L16.4145 18L22 12L16.4145 6H16.4133Z"
+                                                fill="currentColor"></path>
+                                        </svg></a>
+                                    <a href="#" class="btn-outline-custom m-2">DOWNLOAD BROCHURE <svg aria-hidden="true"
+                                            class="icon light" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M20 19V22H4V19H5V21H19V19H20ZM17.853 12.854L17.146 12.147L12.5 16.793V3H11.5V16.793L6.854 12.147L6.147 12.853L12 18.707L17.854 12.853L17.853 12.854Z"
+                                                fill="currentColor"></path>
+                                        </svg></a>
+                                </div>
+
+                                <p class="mt-3 fs-4 text-start">
+                                    Energy consumption (weighted combined): 4,3 kWh/100 Km plus 11,2
+                                    l/100km; CO2 emissions (weighted combined): 272 g/km;
+                                    CO2 class (weighted combined): G; CO2 class with discharged battery: G;
+                                    Fuel consumption with discharged battery (combined): 14 l/100km
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item modelsText">
+                        <div class="row justify-content-center">
+                            <div class="col-12 text-center">
+                                <img src="./assets/images/urus_center_light.svg" alt="" id="imgHeading"
+                                    class="img-fluid">
+
+                                <h2 class="fs-1 ">
+                                    DARE TO LIVE MORE
+                                </h2>
+
+                                <img src="./assets/images/models_urus_se.png" class="d-block img-fluid mx-auto my-3">
+
+                                <div class="mt-4 py-5 px-md-4">
+                                    <a href="#" class="btn-custom m-2">EXPLORE THE MODEL <svg aria-hidden="true"
+                                            class="icon light" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16.4133 6L15.5553 6.92298L19.6739 11.3473H2V12.6527H19.6739L15.5541 17.077L16.4145 18L22 12L16.4145 6H16.4133Z"
+                                                fill="currentColor"></path>
+                                        </svg></a>
+                                    <a href="#" class="btn-outline-custom m-2">DOWNLOAD BROCHURE <svg aria-hidden="true"
+                                            class="icon light" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M20 19V22H4V19H5V21H19V19H20ZM17.853 12.854L17.146 12.147L12.5 16.793V3H11.5V16.793L6.854 12.147L6.147 12.853L12 18.707L17.854 12.853L17.853 12.854Z"
+                                                fill="currentColor"></path>
+                                        </svg></a>
+                                </div>
+
+                                <p class="mt-3 fs-4 text-start">
+                                    Urus Performante, Urus S, Urus SE: Combined energy consumption:
+                                    21,4 kWh/100 Km plus 14,1-5,71 l/100km; Combined CO2 emissions:
+                                    320-140 g/km; Combined CO2 efficiency class: E-G; Combined fuel
+                                    consumption with discharged battery: 12,9 l/100km; CO2 class with
+                                    discharged battery: G
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item modelsText">
+                        <div class="row justify-content-center">
+                            <div class="col-12 text-center">
+                                <img src="./assets/images/revuelto_center_light.svg" alt="" id="imgHeading"
+                                    class="img-fluid">
+
+                                <h2 class="fs-1">
+                                    FROM NOW ON
+                                </h2>
+
+                                <img src="./assets/images/familyChooser-Revuelto_0.png"
+                                    class="d-block img-fluid mx-auto my-3">
+
+                                <div class="mt-4 py-5 px-md-4">
+                                    <a href="#" class="btn-custom m-2">EXPLORE THE MODEL <svg aria-hidden="true"
+                                            class="icon light" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16.4133 6L15.5553 6.92298L19.6739 11.3473H2V12.6527H19.6739L15.5541 17.077L16.4145 18L22 12L16.4145 6H16.4133Z"
+                                                fill="currentColor"></path>
+                                        </svg></a>
+                                    <a href="#" class="btn-outline-custom m-2">DOWNLOAD BROCHURE <svg aria-hidden="true"
+                                            class="icon light" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M20 19V22H4V19H5V21H19V19H20ZM17.853 12.854L17.146 12.147L12.5 16.793V3H11.5V16.793L6.854 12.147L6.147 12.853L12 18.707L17.854 12.853L17.853 12.854Z"
+                                                fill="currentColor"></path>
+                                        </svg></a>
+                                </div>
+
+                                <p class="mt-3 fs-4 text-start">
+                                    Energy consumption (weighted combined): 4,7 kWh/100 Km plus 15
+                                    l/100km; CO2 emissions (weighted combined): 350 g/km;
+                                    CO2 class (weighted combined): G; CO2 class with discharged battery: G;
+                                    Fuel consumption with discharged battery (combined): 17,9 l/100km
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="carousel-item modelsText">
+                        <div class="row justify-content-center">
+                            <div class="col-12 text-center">
+
+                                <img src="./assets/images/huracan_center_light.svg" alt="" id="imgHeading"
+                                    class="img-fluid">
+
+                                <h2 class="fs-1 ">
+                                    BEYOND THE CONCRETE
+                                </h2>
+
+                                <img src="./assets/images/familyChooser-Huracan Sterrato.png"
+                                    class="d-block img-fluid mx-auto my-3">
+
+                                <div class="mt-4 py-5 px-md-4">
+                                    <a href="#" class="btn-custom m-2">EXPLORE THE MODEL <svg aria-hidden="true"
+                                            class="icon light" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16.4133 6L15.5553 6.92298L19.6739 11.3473H2V12.6527H19.6739L15.5541 17.077L16.4145 18L22 12L16.4145 6H16.4133Z"
+                                                fill="currentColor"></path>
+                                        </svg></a>
+                                    <a href="#" class="btn-outline-custom m-2">DOWNLOAD BROCHURE <svg aria-hidden="true"
+                                            class="icon light" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M20 19V22H4V19H5V21H19V19H20ZM17.853 12.854L17.146 12.147L12.5 16.793V3H11.5V16.793L6.854 12.147L6.147 12.853L12 18.707L17.854 12.853L17.853 12.854Z"
+                                                fill="currentColor"></path>
+                                        </svg></a>
+                                </div>
+
+                                <p class="mt-3 fs-4 text-start">
+                                    Huracán Evo Spyder, Huracán Sterrato, Huracán Tecnica:
+                                    Combined energy consumption: 14,9-14,5 l/100km;
+                                    Combined CO2 emissions: 338-328 g/km;
+                                    Combined CO2 efficiency class: G
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev d-flex align-items-start mt-5 mt-md-0" type="button"
+                    data-bs-target="#carCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark"></span>
+                </button>
+
+                <button class="carousel-control-next d-flex align-items-start mt-5 mt-md-0" type="button"
+                    data-bs-target="#carCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark"></span>
+                </button>
+
+            </div>
+        </div>
+
+        <div class="dealer"><!-- 2.component-->
+            <div class="container"> <!-- 3.componentContainer -->
+                <div class="row"> <!--4.row -->
+                    <div class="col-12 dealerBlock"><!--5.column -->
+                        <h4 class="dealerh4">DEALER LOCATOR</h4>
+                        <a href="#" class=" mt-3 bg-white fw-bold" style="padding: 20px; color: black;">FIND
+                            YOUR DEALER
+                            <svg aria-hidden="true" class="icon light" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.4133 6L15.5553 6.92298L19.6739 11.3473H2V12.6527H19.6739L15.5541 17.077L16.4145 18L22 12L16.4145 6H16.4133Z"
+                                    fill="currentColor"></path>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="explore " style="background: #141414;"><!-- 2.component-->
+            <div class="container"> <!-- 3.componentContainer -->
+                <section class="model-section container-fluid">
+
+                    <!-- ✅ ROW 1 : BUTTONS -->
+                    <div class="row">
+                        <div class="col-12 col-lg-6 text-center model-nav">
+                            <button class="model-btn active" data-bs-target="#modelCarousel" data-bs-slide-to="0">
+                                TEMERARIO
+                            </button>
+                            <button class="model-btn" data-bs-target="#modelCarousel" data-bs-slide-to="1">
+                                REVUELTO
+                            </button>
+                            <button class="model-btn" data-bs-target="#modelCarousel" data-bs-slide-to="2">
+                                URUS SE
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- ✅ ROW 2 : LEFT TEXT + RIGHT IMAGE -->
+                    <div id="modelCarousel" class="carousel slide carousel-fade" data-bs-ride="false">
+                        <div class="carousel-inner">
+
+                            <!-- TEMERARIO -->
+                            <div class="carousel-item active">
+                                <div class="row align-items-center ">
+
+                                    <!-- LEFT SIDE TEXT -->
+                                    <div class="col-12 col-lg-6 model-text text-start">
+                                        <h4>CONFIGURE YOUR</h4>
+                                        <h2 class="my-4">TEMERARIO</h2>
+                                        <a href="#" class="explore-btn">START CONFIGURATION <svg aria-hidden="true"
+                                                class="icon light" width="24" height="24" viewBox="0 0 24 24"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 1.94702L3 6.18302V17.817L12 22.053L21 17.817V6.18302L12 1.94702ZM12.5 20.712V18H11.5V20.712L4 17.182V7.28902L6.002 8.23102L6.427 7.32602L4.675 6.50002L12 3.05302L19.325 6.50002L17.573 7.32502L17.999 8.23002L20 7.28802V17.183L12.5 20.712ZM14.927 9.67502L12.5 10.817V14H11.5V10.817L9.073 9.67502L9.499 8.77002L12 9.94702L14.502 8.77002L14.927 9.67502Z"
+                                                    fill="currentColor"></path>
+                                            </svg></a>
+                                        <a href="#" class="model-button">Explore Model <svg aria-hidden="true"
+                                                class="icon light" width="24" height="24" viewBox="0 0 24 24"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M16.4133 6L15.5553 6.92298L19.6739 11.3473H2V12.6527H19.6739L15.5541 17.077L16.4145 18L22 12L16.4145 6H16.4133Z"
+                                                    fill="currentColor"></path>
+                                            </svg></a>
+                                    </div>
+
+                                    <!-- RIGHT SIDE IMAGE -->
+                                    <div class="col-12 col-lg-6 imageColumn">
+                                        <img src="./assets/images/model_chooser_temerario.png"
+                                            class="img-fluid model-img" alt="Temerario">
+                                    </div>
+                                    <div class="col-12 pt-5 text-start">
+                                        <p>Energy consumption (weighted combined): 4,3 kWh/100 Km plus 11,2
+                                            l/100km; CO2
+                                            emissions (weighted combined): 272 g/km; CO2 class (weighted
+                                            combined): G;
+                                            CO2 class with discharged battery: G; Fuel consumption with
+                                            discharged
+                                            battery (combined): 14 l/100km</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- REVUELTO -->
+                            <div class="carousel-item">
+                                <div class="row align-items-center">
+
+                                    <div class="col-12 col-lg-6 model-text text-start">
+                                        <h4>CONFIGURE YOUR</h4>
+                                        <h2 class="my-4">REVUELTO</h2>
+                                        <a href="#" class="explore-btn">START CONFIGURATION <svg aria-hidden="true"
+                                                class="icon light" width="24" height="24" viewBox="0 0 24 24"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 1.94702L3 6.18302V17.817L12 22.053L21 17.817V6.18302L12 1.94702ZM12.5 20.712V18H11.5V20.712L4 17.182V7.28902L6.002 8.23102L6.427 7.32602L4.675 6.50002L12 3.05302L19.325 6.50002L17.573 7.32502L17.999 8.23002L20 7.28802V17.183L12.5 20.712ZM14.927 9.67502L12.5 10.817V14H11.5V10.817L9.073 9.67502L9.499 8.77002L12 9.94702L14.502 8.77002L14.927 9.67502Z"
+                                                    fill="currentColor"></path>
+                                            </svg></a>
+                                        <a href="#" class="model-button">Explore Model <svg aria-hidden="true"
+                                                class="icon light" width="24" height="24" viewBox="0 0 24 24"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M16.4133 6L15.5553 6.92298L19.6739 11.3473H2V12.6527H19.6739L15.5541 17.077L16.4145 18L22 12L16.4145 6H16.4133Z"
+                                                    fill="currentColor"></path>
+                                            </svg></a>
+                                    </div>
+
+                                    <div class="col-12 col-lg-6 imageColumn">
+                                        <img src="./assets/images/model_chooser_revuelto.png"
+                                            class="img-fluid model-img" alt="Revuelto">
+                                    </div>
+                                    <div class="col-12 pt-5 text-start">
+                                        <p>Energy consumption (weighted combined): 4,7 kWh/100 Km plus 15
+                                            l/100km; CO2
+                                            emissions (weighted combined): 350 g/km; CO2 class (weighted
+                                            combined): G;
+                                            CO2 class with discharged battery: G; Fuel consumption with
+                                            discharged
+                                            battery (combined): 17,9 l/100km</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- URUS SE -->
+                            <div class="carousel-item">
+                                <div class="row align-items-center">
+
+                                    <div class="col-12 col-lg-6 model-text text-start">
+                                        <h4>CONFIGURE YOUR</h4>
+                                        <h2 class="my-4">URUS SE</h2>
+                                        <a href="#" class="explore-btn ">START CONFIGURATION <svg aria-hidden="true"
+                                                class="icon light" width="24" height="24" viewBox="0 0 24 24"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 1.94702L3 6.18302V17.817L12 22.053L21 17.817V6.18302L12 1.94702ZM12.5 20.712V18H11.5V20.712L4 17.182V7.28902L6.002 8.23102L6.427 7.32602L4.675 6.50002L12 3.05302L19.325 6.50002L17.573 7.32502L17.999 8.23002L20 7.28802V17.183L12.5 20.712ZM14.927 9.67502L12.5 10.817V14H11.5V10.817L9.073 9.67502L9.499 8.77002L12 9.94702L14.502 8.77002L14.927 9.67502Z"
+                                                    fill="currentColor"></path>
+                                            </svg></a>
+                                        <a href="#" class="model-button">Explore Model<svg aria-hidden="true"
+                                                class="icon light" width="24" height="24" viewBox="0 0 24 24"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M16.4133 6L15.5553 6.92298L19.6739 11.3473H2V12.6527H19.6739L15.5541 17.077L16.4145 18L22 12L16.4145 6H16.4133Z"
+                                                    fill="currentColor"></path>
+                                            </svg></a>
+                                    </div>
+
+                                    <div class="col-12 col-lg-6">
+                                        <img src="./assets/images/model_chooser_urus_se.png" class="img-fluid model-img"
+                                            alt="Urus SE">
+                                    </div>
+                                    <div class="col-12 pt-5 text-start">
+                                        <p>Energy consumption (weighted combined): 21,4 kWh/100 Km plus 5,71
+                                            l/100km;
+                                            CO2 emissions (weighted combined): 140 g/km; CO2 class (weighted
+                                            combined):
+                                            E; CO2 class with discharged battery: G; Fuel consumption with
+                                            discharged
+                                            battery (combined): 12,9 l/100km</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="news "><!-- 2.component-->
+            <div class="container"> <!-- 3.componentContainer -->
+                <div class="row newsBody"> <!--4.row -->
+                    <div class="col-12 col-lg-6"><!--5.column -->
+                        <h4>News Lamborghini world</h4>
+                    </div>
+                    <div class="col-12 col-lg-6 d-flex justify-content-end">
+                        <p class="para">Read More <svg aria-hidden="true" class="icon light" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.4133 6L15.5553 6.92298L19.6739 11.3473H2V12.6527H19.6739L15.5541 17.077L16.4145 18L22 12L16.4145 6H16.4133Z"
+                                    fill="currentColor"></path>
+                            </svg></p>
+                    </div>
+                </div>
+                <div class="row newsBody1"> <!--4.row -->
+                    <div class="col-12 "> <!--5.column -->
+                        <img src="./assets/images/cover.webp" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 mt-5 "> <!--5.column -->
+                        <a href="#" class="fs-6"
+                            style="padding: 8px; background-color: #969696; color: white; margin-right: 1rem;">
+                            ARENA</a>
+                        <!-- <a href="#" class="btn btn-primary"> DESIGN</a> -->
+                        <a href="#" class="fs-6"
+                            style="padding: 8px; background-color: #969696; color: white;">MOTORSPORT</a>
+                        <p class="my-4 fs-6 " style="color: #313131; font-weight: 600;">26 FEBRUARY 2026</p>
+                        <a href="#" class="fs-1 fw-bold" style="text-transform:uppercase;">Lamborghini Arena in Imola:
+                            Super Trofeo Europe May 9-10</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container newChapter ">
+            <div id="newChapterCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active text-start">
+                        <div class="row g-5">
+                            <div class="col-12 col-lg-4 newChapterCard">
+                                <div class="cardHeader">
+                                    <img src="./assets/images/cover1.webp" alt="" class="img-fluid rounded-0">
+                                </div>
+                                <div class="cardMain my-4">
+                                    <a href="#" class="fs-6"
+                                        style="padding: 6px; background-color: #969696; color: white; margin-right: 1rem;">FENOMENO</a>
+                                    <a href="#" class="fs-6"
+                                        style="padding: 6px; background-color: #969696; color: white; margin-right: 1rem;">DESIGN</a>
+                                    <a href="#" class="fs-6"
+                                        style="padding: 6px; background-color: #969696; color: white; margin-right: 1rem;">STORIES</a>
+                                    <p class="my-4 fs-6 " style="color: #313131; font-weight: 600;">24 FEBRUARY 2026
+                                    </p>
+                                </div>
+
+                                <div class="cardFooter">
+                                    <h4 class="fs-1" style="text-transform: uppercase;">Elena Salmistraro x
+                                        Lamborghini
+                                        Fenomeno: Sculpting the Soul</h4>
+                                </div>
+                                <div class="fs-4 my-5">
+                                    <p>The vehicle is not yet offered for sale and is therefore not subject to
+                                        Directive
+                                        1999/94/EC. The fuel consumption and emissions data is in the type approval
+                                        stage
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 newChapterCard">
+                                <div class="cardHeader">
+                                    <img src="./assets/images/cover.jpg" alt="" class="img-fluid rounded-0">
+                                </div>
+                                <div class="cardMain my-4">
+                                    <a href="#" class="fs-6"
+                                        style="padding: 6px; background-color: #969696; color: white; margin-right: 1rem;">BRAND
+                                        EXTENSION</a>
+                                    <p class="my-4 fs-6 " style="color: #313131; font-weight: 600;">5 FEBRUARY 2026
+                                    </p>
+                                </div>
+
+                                <div class="cardFooter">
+                                    <h4 class="fs-1" style="text-transform: uppercase;">LAMBORGHINI AND BABOLAT
+                                        UNVEIL A NEW
+                                        CHAPTER</h4>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-lg-4 newChapterCard">
+                                <div class="cardHeader">
+                                    <img src="./assets/images/coversito.jpg" alt="" class="img-fluid rounded-0">
+                                </div>
+                                <div class="cardMain my-4">
+                                    <a href="#" class="fs-6"
+                                        style="padding: 6px; background-color: #969696; color: white; margin-right: 1rem;">ARENA</a>
+                                    <a href="#" class="fs-6"
+                                        style="padding: 6px; background-color: #969696; color: white; margin-right: 1rem;"
+                                        x>EVENTS</a>
+                                    <p class="my-4 fs-6 " style="color: #313131; font-weight: 600;">29 JANUARY 2026
+                                    </p>
+                                </div>
+                                <div class="cardFooter">
+                                    <h4 class="fs-1" style="text-transform: uppercase;">LAMBORGHINI ARENA RETURNS IN
+                                        2026
+                                        FOR
+                                        ITS SECOND EDITION</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row g-5 text-start">
+                            <div class="col-12 col-lg-4 newChapterCard">
+                                <div class="cardHeader">
+                                    <img src="./assets/images/cover(1).jpg" alt="" class="img-fluid rounded-0">
+                                </div>
+                                <div class="cardMain my-4">
+                                    <a href="#" class="fs-6"
+                                        style="padding: 6px; background-color: #969696; color: white; margin-right: 1rem;">BRAND
+                                        EXTENSION</a>
+                                    <a href="#" class="fs-6"
+                                        style="padding: 6px; background-color: #969696; color: white; margin-right: 1rem;">DRIVING
+                                        PROGRAMS</a>
+                                    <p class="my-4 fs-6 " style="color: #313131; font-weight: 600;">23 JANUARY 2026
+                                    </p>
+                                </div>
+
+                                <div class="cardFooter">
+                                    <h4 class="fs-1" style="text-transform: uppercase;">Lamborghini Neve 2026:
+                                        performance and lifestyle in the Alps</h4>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 newChapterCard">
+                                <div class="cardHeader">
+                                    <img src="./assets/images/cover(2).jpg" alt="" class="img-fluid rounded-0">
+                                </div>
+                                <div class="cardMain my-4">
+                                    <a href="#" class="fs-6"
+                                        style="padding: 6px; background-color: #969696; color: white; margin-right: 1rem;">CORPORATE</a>
+                                    <p class="my-4 fs-6 " style="color: #313131; font-weight: 600;">20 JANUARY 2026
+                                    </p>
+                                </div>
+
+                                <div class="cardFooter">
+                                    <h4 class="fs-1" style="text-transform: uppercase;">Lamborghini sets 2025 delivery
+                                        record with 10,747 cars</h4>
+                                </div>
+                                <div class="fs-4 my-5">
+                                    <p>Limited Series: Fenomeno: Under approval, not available for sale
+                                        Revuelto: Combined energy consumption: 4,7 kWh/100 Km plus 15 l/100km; Combined
+                                        CO2 emissions: 350 g/km; Combined CO2
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 newChapterCard">
+                                <div class="cardHeader">
+                                    <img src="./assets/images/cover (8).webp" alt="" class="img-fluid rounded-0">
+                                </div>
+                                <div class="cardMain my-4">
+                                    <a href="#" class="fs-6"
+                                        style="padding: 6px; background-color: #969696; color: white; margin-right: 1rem;">PEOPLE</a>
+                                    <a href="#" class="fs-6"
+                                        style="padding: 6px; background-color: #969696; color: white; margin-right: 1rem;"
+                                        x>CORPORATE</a>
+                                    <p class="my-4 fs-6 " style="color: #313131; font-weight: 600;">15 JANUARY 2026
+                                    </p>
+                                </div>
+                                <div class="cardFooter">
+                                    <h4 class="fs-1" style="text-transform: uppercase;">Top Employer 2026: Lamborghini
+                                        Sets New Standards</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="col-12 col-lg-4 newChapterCard">
+                            <div class="cardHeader">
+                                <img src="./assets/images/cover(3).jpg" alt="" class="img-fluid rounded-0">
+                            </div>
+                            <div class="cardMain my-4">
+                                <a href="#" class="fs-6"
+                                    style="padding: 6px; background-color: #969696; color: white; margin-right: 1rem;">BRAND
+                                    EXTENSION</a>
+                                <p class="my-4 fs-6 " style="color: #313131; font-weight: 600;">12 JANUARY 2026
+                                </p>
+                            </div>
+                            <div class="cardFooter">
+                                <h4 class="fs-1" style="text-transform: uppercase;">CAPiTA and Union x Automobili
+                                    Lamborghini</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Indicators MUST be here -->
+                <div class="carousel-indicators custom-indicators">
+                    <button type="button" data-bs-target="#newChapterCarousel" data-bs-slide-to="0"
+                        class="active bg-black mb-5"></button>
+                    <button type="button" data-bs-target="#newChapterCarousel" data-bs-slide-to="1"
+                        class=" bg-black"></button>
+                    <button type="button" data-bs-target="#newChapterCarousel" data-bs-slide-to="2"
+                        class="bg-black"></button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer><!--1.parentContainer -->
+        <div class="contact bg-black"><!-- 2.component-->
+            <div class="container"> <!-- 3.componentContainer -->
+                <div class="row text-start" style="border-bottom: 1px solid white; padding: 3rem 0rem;"> <!--4.row -->
+                    <div class="col-12 col-lg mb-4">
+                        <ul>
+                            <li><a href="#">COMPANY</a></li>
+                            <li><a href="#">SUSTAINABILITY</a></li>
+                            <li><a href="#">COOKIE SETTINGS</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg mb-4">
+                        <ul>
+                            <li><a href="#">FINANCIALS</a></li>
+                            <li><a href="#">MEDIA CENTER</a></li>
+                            <li><a href="#">SITEMAP</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg mb-4">
+                        <ul>
+                            <li><a href="#">CAREERS</a></li>
+                            <li><a href="#">PRIVACY & LEGAL</a></li>
+                            <li><a href="#">NEWSLETTER</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg mb-4">
+                        <ul>
+                            <li><a href="#">CONTACT US</a></li>
+                            <li><a href="#">ACCESSIBILITY</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg mb-4 contactLogo">
+                        <ul>
+                            <li><a href="#">FOLLOW US</a></li>
+                            <li><i class="fa-brands fa-instagram mr-2 fs-2"></i>
+                                <i class="fa-brands fa-threads mr-2 fs-2"></i>
+                                <i class="fa-brands fa-facebook mr-2 fs-2"></i>
+                                <i class="fa-brands fa-youtube mr-2 fs-2"></i>
+                                <i class="fa-brands fa-twitter mr-2 fs-2"></i>
+                                <i class="fa-brands fa-tiktok mr-2 fs-2"></i>
+                                <i class="fa-brands fa-linkedin mr-2 fs-2 pt-2"></i>
+                                <i class="fa-brands fa-weibo mr-2 fs-2"></i>
+                                <i class="fa-brands fa-youtube mr-2 fs-2"></i>
+                                <i class="fa-brands fa-weixin mr-2 fs-2"></i>
+                                <i class="fa-brands fa-discord mr-2 fs-2"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" style="border-bottom: 1px solid white; padding: 4rem 0rem;"> <!--4.row -->
+                    <div class="col-12 contactp">
+                        <P class="fs-4">* The consumption and emissions values in the website refer to your geographical
+                            IP. This
+                            value
+                            might be unrealistic if you navigate using VPN or if the position of your Internet provider
+                            is imprecise. If you believe you are incorrectly geolocalized, contact your dealer to get
+                            valid consumption and emissions information in your area.
+
+                        </P>
+                    </div>
+                </div>
+                <div class="row" style="padding: 4rem 0rem;"> <!--4.row -->
+                    <div class="col-12 contactp">
+                        <p class="fs-4">This site is protected by reCAPTCHA and the Privacy Policy and Terms of Service
+                            of Google apply.</p>
+                        <P class="fs-4 py-3">Copyright © 2026 Automobili Lamborghini S.p.A. a company with sole
+                            shareholder subject to the
+                            management and coordination of AUDI AG. <br>
+                            All rights reserved. VAT no. IT 00591801204</p>
+
+                        <p class="fs-4"> WARNING ABOUT ILLEGAL OFFERS OF ALLEGED SHARES OF AUTOMOBILI LAMBORGHINI S.P.A.
+                            <br>
+                            Automobili Lamborghini S.p.A. got the notice that several third parties across different
+                            countries are allegedly offering shares in Automobili Lamborghini S.p.A. These offers are
+                            unlawful and originate neither from Volkswagen Aktiengesellschaft nor from any of its
+                            subsidiaries.
+                        </p>
+                        </P>
+                    </div>
+                </div>
+                <div class="row text-center" style="padding: 3rem 0rem;"> <!--4.row -->
+                    <div class="col-12">
+                        <img src="./assets/images/logo_header_01.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const buttons = document.querySelectorAll('.model-btn');
+        const carousel = document.querySelector('#modelCarousel');
+
+        carousel.addEventListener('slide.bs.carousel', function (e) {
+            buttons.forEach(btn => btn.classList.remove('active'));
+            buttons[e.to].classList.add('active');
+        });
+    </script>
+    <script>
+        const menuToggle = document.getElementById("menuToggle");
+        const menu = document.getElementById("lamborghiniMenu");
+        const closeMenu = document.getElementById("closeMenu");
+
+        menuToggle.addEventListener("click", () => {
+            menu.classList.add("active");
+        });
+
+        closeMenu.addEventListener("click", () => {
+            menu.classList.remove("active");
+        });
+    </script>
+</body>
+
+</html>

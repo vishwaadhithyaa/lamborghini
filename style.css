@@ -1,0 +1,418 @@
+/* standards css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-wrap: pretty;
+  /* border: 1px solid red; */
+  /* border: 1px solid black; */
+}
+
+:root {
+  --primaryColor: #917300;
+  --surface-surface-1: #181818;
+  --secondaryColor: #666666;
+  --tertiaryColor: #333333;
+  --darkColor: #000000;
+  --lightColor: #ffffff;
+  --regularFont: 1.6rem;
+  --headingFont: 2.5rem;
+  --fontfamily: 'Lambo Type', 'Roboto', Helvetica Neue, Helvetica, Arial, sans-serif;
+  --ffSecondary: "Merienda", cursive;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: var(--fontfamily);
+  color: var(--darkColor);
+  font-size: var(--regularFont);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-optical-sizing: auto;
+  /* border: 1px solid black; */
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+  text-wrap: balance;
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
+}
+
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background-color: var(--primaryColor);
+  font-family: var(--ffPrimary);
+  color: var(--lightColor);
+  font-size: var(--regularFont);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.1rem;
+
+
+  cursor: pointer;
+  border: none;
+  border-radius: 0rem;
+  padding: 1.5rem 1rem;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  color: var(--lightColor);
+  transition: background-color 0.2s ease;
+}
+
+/* standards css */
+
+/* navBar css*/
+.lamborghini-menu{
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    z-index: 9999;
+    transition: top 0.6s ease;
+    overflow-y: auto;
+}
+
+.lamborghini-menu.active{
+    top: 0;
+}
+
+.close-menu{
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-main{
+    list-style: none;
+    padding: 0;
+}
+
+.menu-main li{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-main li:hover{
+    padding-left: 15px;
+    color: #aaa;
+}
+
+.menu-divider{
+    border-color:  rgba(255,255,255,0.2);
+    margin: 60px 0;
+}
+
+.small-links p{
+    color: #ccc;
+    padding: 15px 0;
+    border-bottom: 2px solid rgba(255,255,255,0.15);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.small-links p:hover{
+    padding-left: 10px;
+    color: white;
+}
+/* navBar css */
+
+/* heroSection */
+.heroSection {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bgVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.heroSection::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.heroContent {
+    position: relative;
+    z-index: 2;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 7%;
+}
+/* heroSection */
+
+h4 {
+  font-family: var(--fontfamily);
+  font-size: 40px;
+  font-weight: 600;
+}
+
+button {
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+
+.para {
+  font-size: 16px;
+  font-family: var(--fontfamily);
+  font-weight: 600;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid black;
+}
+
+.mod {
+  font-family: var(--fontfamily);
+  font-size: 50px;
+  font-weight: 700;
+  color: #494949;
+
+}
+
+.dealer {
+  background-image: url(./assets/images/banner-desktop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 6rem 0rem;
+  position: relative;
+}
+
+.dealer::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: rgb(0, 0, 0, 0.4);
+}
+
+.dealerBlock {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.dealerh4 {
+  font-size: 80px;
+  padding-bottom: 3rem;
+  letter-spacing: -2px;
+}
+
+/* explore caroseul */
+
+.carousel-item img {
+  height: 50vh;
+  object-fit: cover;
+}
+
+.model-section {
+  background: #141414;
+  color: #fff;
+  padding: 60px 0;
+}
+
+.model-nav {
+  margin-bottom: 50px;
+}
+
+.model-btn {
+  color: #777;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0 12px;
+  border-bottom: 2px solid #fff;
+  background: #141414;
+}
+
+.model-btn:hover {
+  color: #a7a5a5;
+}
+
+.model-btn.active {
+  color: #fff;
+  border-bottom: 2px solid #ffc000;
+}
+
+.model-text h2 {
+  font-size: 70px;
+  font-weight: 800;
+  letter-spacing: -3px;
+}
+
+.model-text h4{
+  font-size: 27px;
+}
+
+.model-text p {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #ccc;
+  max-width: 450px;
+}
+
+.model-img {
+  max-height: 600px;
+}
+
+.explore-btn{
+  padding: 22px;
+  background-color: #ffc000;
+  color: #000000;
+  margin-right: 1.5rem;
+}
+
+.model-button{
+  padding: 22px;
+  
+ border: 1px solid #b0b0b4;
+}
+/* explore caroseul */
+
+/* models */
+.carousel-item{
+    padding:60px 0;
+    text-align:center;
+}
+#imgHeading{
+  height: 5rem;
+}
+.carousel-item img{
+    max-height:400px;
+    object-fit:contain;
+    border-radius:10px;
+}
+
+.logo{
+    letter-spacing:4px;
+}
+
+.btn-custom{
+    background:#917300;
+    border:none;
+    color: white;
+    padding: 20px;
+    font-size: 18px;  
+}
+
+.btn-outline-custom{
+    border:1px solid #000000;
+    color:#000000;
+    padding: 20px;
+    font-size: 18px;
+}
+.modelsText p{
+  padding-top: 4rem;
+  text-wrap-mode: wrap;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.modelsText h2{
+  padding-top: 30px;
+  font-size: 40px;
+  font-family: var(--fontfamily);
+  color: #494949;
+
+}
+/* models */
+.newsBody {
+  padding: 7rem 0rem;
+}
+
+.newsBody1 {
+  overflow: hidden;
+
+}
+
+.newsBody1 img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s linear;
+  transform-origin: center;
+  cursor: pointer;
+}
+
+.newsBody1:hover img {
+  transform: scale(1.08);
+}
+
+.newChapterCard {
+  height: 60rem;
+}
+
+
+
+ul li {
+  color: white;
+  padding: 1rem;
+}
+
+.contactp {
+  color: white;
+  
+}
+
+.custom-indicators {
+    position: static;
+    margin-top: 40px;
+    
+}
+
+.custom-indicators button {
+    width: 60px;
+    height: 4px;
+    background-color: #ccc;
+    border: none;
+    margin: 0 8px;
+}
+
+.custom-indicators .active {
+    background-color: black;
+    
+}
+  
