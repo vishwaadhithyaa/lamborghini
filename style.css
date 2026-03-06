@@ -88,106 +88,144 @@ button:hover {
 /* standards css */
 
 /* navBar css*/
-body{
-    padding-top: 60px;
-}
-.navBar{
-    z-index: 9999;
-}
-.lamborghini-menu{
-    position: fixed;
-    top: -100%;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: #000;
-    z-index: 9999;
-    transition: top 0.6s ease;
-    overflow-y: auto;
+
+
+.navBar {
+  z-index: 9999;
 }
 
-.lamborghini-menu.active{
-    top: 0;
+/* ── Remove default button styling from menu trigger ── */
+#menuToggle {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
-.close-menu{
-    font-size: 40px;
-    color: white;
-    cursor: pointer;
+#menuToggle:focus {
+  outline: none;
+  box-shadow: none;
 }
 
-.menu-main{
-    list-style: none;
-    padding: 0;
+/* ── Fullscreen overlay menu ── */
+.lamborghini-menu {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  z-index: 99999;
+  /* above navbar */
+  transition: top 0.6s ease;
+  overflow-y: auto;
 }
 
-.menu-main li{
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 25px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-    cursor: pointer;
-    transition: 0.3s;
+.lamborghini-menu.active {
+  top: 0;
 }
 
-.menu-main li:hover{
-    padding-left: 15px;
-    color: #aaa;
+.close-menu {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  line-height: 1;
+  user-select: none;
 }
 
-.menu-divider{
-    border-color:  rgba(255,255,255,0.2);
-    margin: 60px 0;
+/* ── Main menu list ── */
+.menu-main {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.small-links p{
-    color: #ccc;
-    padding: 15px 0;
-    border-bottom: 2px solid rgba(255,255,255,0.15);
-    cursor: pointer;
-    transition: 0.3s;
+.menu-main li {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 25px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: padding-left 0.3s, color 0.3s;
 }
 
-.small-links p:hover{
-    padding-left: 10px;
-    color: white;
+.menu-main li:hover {
+  padding-left: 15px;
+  color: #aaa;
 }
+
+/* ── Responsive font size on mobile ── */
+@media (max-width: 576px) {
+  .menu-main li {
+    font-size: 15px;
+    padding: 18px 0;
+  }
+}
+
+.menu-divider {
+  border-color: rgba(255, 255, 255, 0.2);
+  margin: 40px 0;
+}
+
+.small-links p {
+  color: #ccc;
+  padding: 15px 0;
+  margin: 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+  transition: padding-left 0.3s, color 0.3s;
+  font-size: 16px;
+}
+
+.small-links p:hover {
+  padding-left: 10px;
+  color: white;
+}
+
 /* navBar css */
 
 /* heroSection */
 .heroSection {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .bgVideo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-    z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .heroSection::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6);
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .heroContent {
-    position: relative;
-    z-index: 2;
-    color: white;
-    top: 50%;
-    transform: translateY(-50%);
-    padding-left: 7%;
+  position: relative;
+  z-index: 2;
+  color: white;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 7%;
 }
+
 /* heroSection */
 
 h4 {
@@ -290,7 +328,7 @@ button {
   letter-spacing: -3px;
 }
 
-.model-text h4{
+.model-text h4 {
   font-size: 27px;
 }
 
@@ -305,66 +343,71 @@ button {
   max-height: 600px;
 }
 
-.explore-btn{
+.explore-btn {
   padding: 22px;
   background-color: #ffc000;
   color: #000000;
   margin-right: 1.5rem;
 }
 
-.model-button{
+.model-button {
   padding: 22px;
-  
- border: 1px solid #b0b0b4;
+
+  border: 1px solid #b0b0b4;
 }
+
 /* explore caroseul */
 
 /* models */
-.carousel-item{
-    padding:60px 0;
-    text-align:center;
+.carousel-item {
+  padding: 60px 0;
+  text-align: center;
 }
-#imgHeading{
+
+#imgHeading {
   height: 5rem;
 }
-.carousel-item img{
-    max-height:400px;
-    object-fit:contain;
-    border-radius:10px;
+
+.carousel-item img {
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 10px;
 }
 
-.logo{
-    letter-spacing:4px;
+.logo {
+  letter-spacing: 4px;
 }
 
-.btn-custom{
-    background:#917300;
-    border:none;
-    color: white;
-    padding: 20px;
-    font-size: 18px;  
+.btn-custom {
+  background: #917300;
+  border: none;
+  color: white;
+  padding: 20px;
+  font-size: 18px;
 }
 
-.btn-outline-custom{
-    border:1px solid #000000;
-    color:#000000;
-    padding: 20px;
-    font-size: 18px;
+.btn-outline-custom {
+  border: 1px solid #000000;
+  color: #000000;
+  padding: 20px;
+  font-size: 18px;
 }
-.modelsText p{
+
+.modelsText p {
   padding-top: 4rem;
   text-wrap-mode: wrap;
   font-size: 15px;
   font-weight: 400;
 }
 
-.modelsText h2{
+.modelsText h2 {
   padding-top: 30px;
   font-size: 40px;
   font-family: var(--fontfamily);
   color: #494949;
 
 }
+
 /* models */
 .newsBody {
   padding: 7rem 0rem;
@@ -400,25 +443,24 @@ ul li {
 
 .contactp {
   color: white;
-  
+
 }
 
 .custom-indicators {
-    position: static;
-    margin-top: 40px;
-    
+  position: static;
+  margin-top: 40px;
+
 }
 
 .custom-indicators button {
-    width: 60px;
-    height: 4px;
-    background-color: #ccc;
-    border: none;
-    margin: 0 8px;
+  width: 60px;
+  height: 4px;
+  background-color: #ccc;
+  border: none;
+  margin: 0 8px;
 }
 
 .custom-indicators .active {
-    background-color: black;
-    
+  background-color: black;
+
 }
-  
