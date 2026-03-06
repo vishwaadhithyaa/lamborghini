@@ -215,11 +215,12 @@ button:hover {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.6);
+  z-index: 1; /* ← ADD THIS */
 }
 
 .heroContent {
   position: relative;
-  z-index: 2;
+  z-index: 2; /* already correct — but needs ::after to be z-index:1 */
   color: white;
   top: 50%;
   transform: translateY(-50%);
